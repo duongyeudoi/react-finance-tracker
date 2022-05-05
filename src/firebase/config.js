@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
-
+import 'firebase/auth';
 const firebaseConfig = {
   apiKey: 'AIzaSyDdU0twzCACprxkScMynXvBw4ZsYbRFYMQ',
   authDomain: 'money-finance-fe11e.firebaseapp.com',
@@ -15,5 +15,5 @@ firebase.initializeApp(firebaseConfig);
 // init service
 
 const projectFirestore = firebase.firestore();
-
-export { projectFirestore };
+const projectAuth = firebase.auth();
+export { projectFirestore, projectAuth };
